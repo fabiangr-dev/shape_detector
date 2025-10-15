@@ -1,0 +1,97 @@
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║     🔍 DETECTOR DE FIGURAS GEOMÉTRICAS - GUÍA RÁPIDA        ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+
+📍 UBICACIÓN DE LOS ARCHIVOS
+────────────────────────────────────────────────────────────────
+   C:\Users\fabia\shape_detector\
+
+📂 ARCHIVOS DISPONIBLES
+────────────────────────────────────────────────────────────────
+   ✓ geometric_shape_detector.py  → Aplicación principal
+   ✓ crear_imagen_prueba.py       → Genera imagen de ejemplo
+   ✓ ejecutar.bat                 → Ejecuta la app fácilmente
+   ✓ test_shapes.png              → Imagen de prueba generada
+   ✓ README.md                    → Documentación completa
+
+🚀 CÓMO EJECUTAR (Elige uno)
+────────────────────────────────────────────────────────────────
+
+   OPCIÓN 1 - Más fácil (Recomendado):
+   ────────────────────────────────
+   1. Abre el Explorador de Windows
+   2. Ve a C:\Users\fabia\shape_detector\
+   3. Doble clic en: ejecutar.bat
+   
+   OPCIÓN 2 - Desde la terminal:
+   ────────────────────────────────
+   cd C:\Users\fabia\shape_detector
+   python geometric_shape_detector.py
+   
+   OPCIÓN 3 - Desde VS Code:
+   ────────────────────────────────
+   1. Abre: geometric_shape_detector.py
+   2. Presiona F5
+
+📸 USAR LA APLICACIÓN
+────────────────────────────────────────────────────────────────
+   
+   Paso 1: Clic en "📁 Cargar Imagen"
+           → Selecciona una imagen (puedes usar test_shapes.png)
+   
+   Paso 2: Clic en "🔍 Detectar Figuras"
+           → Espera el análisis
+   
+   Paso 3: Ver resultados en la parte inferior
+           → Cada figura tendrá un color diferente
+   
+   Paso 4: Clic en "🗑️ Limpiar" para probar otra imagen
+
+🎨 COLORES DE LAS FIGURAS
+────────────────────────────────────────────────────────────────
+   🟢 Verde    → Triángulos
+   🔵 Azul     → Cuadrados
+   🟠 Naranja  → Rectángulos
+   🟣 Magenta  → Pentágonos
+   🔷 Cian     → Hexágonos
+   🔴 Rojo     → Círculos
+
+✨ CREAR IMAGEN DE PRUEBA
+────────────────────────────────────────────────────────────────
+   cd C:\Users\fabia\shape_detector
+   python crear_imagen_prueba.py
+   
+   Esto generará: test_shapes.png
+
+💡 CONSEJOS
+────────────────────────────────────────────────────────────────
+   • Usa imágenes con buen contraste
+   • Fondo simple funciona mejor
+   • Las figuras deben estar claramente definidas
+   • Evita imágenes borrosas o pixeladas
+
+⚠️ SI HAY PROBLEMAS
+────────────────────────────────────────────────────────────────
+   
+   Error: "No module named cv2"
+   Solución: pip install opencv-python numpy pillow
+   
+   No detecta figuras:
+   Solución: Usa la imagen de prueba test_shapes.png
+   
+   La ventana no se abre:
+   Solución: Verifica que Python esté instalado correctamente
+
+✅ ESTADO ACTUAL
+────────────────────────────────────────────────────────────────
+   ✓ Dependencias instaladas correctamente
+   ✓ OpenCV: v4.12.0
+   ✓ NumPy: v2.3.4
+   ✓ Pillow: v12.0.0
+   ✓ Aplicación lista para usar
+
+────────────────────────────────────────────────────────────────
+   ¡Disfruta detectando figuras geométricas! 🎉
+────────────────────────────────────────────────────────────────
