@@ -16,13 +16,14 @@ Aplicación de escritorio en Python con interfaz gráfica que utiliza visión po
 ![Demo](test_shapes.png)
 
 ## ✨ Características
-## ✨ Características
 
 - 🔷 **Detección Automática**: Reconoce triángulos, cuadrados, rectángulos, círculos, pentágonos y hexágonos
 - 🎨 **Colores Distintivos**: Cada tipo de figura se marca con un color diferente
 - 🖼️ **Visualización Dual**: Muestra imagen original y procesada lado a lado
-- 📊 **Estadísticas**: Resumen detallado del número de figuras detectadas por tipo
+- 📊 **Listado Detallado**: Muestra información de cada figura detectada individualmente
+- 📏 **Análisis Completo**: Para cada figura muestra tipo, vértices, área y centro
 - 💻 **Interfaz Intuitiva**: GUI amigable construida con Tkinter
+- 🖼️ **Imágenes de Ejemplo**: Incluye generador de imágenes individuales para pruebas
 - 🚀 **Fácil de Usar**: Scripts de ejecución rápida incluidos
 
 ## 🎨 Código de Colores
@@ -71,11 +72,28 @@ python geometric_shape_detector.py
 3. **Resultados**: Revisa las figuras detectadas y el resumen estadístico
 4. **Limpiar**: Usa "🗑️ Limpiar" para empezar con una nueva imagen
 
-## 🧪 Probar con Imagen de Ejemplo
+## 🧪 Probar con Imágenes de Ejemplo
 
-El proyecto incluye una imagen de prueba (`test_shapes.png`) con varias figuras geométricas.
+El proyecto incluye una imagen de prueba (`test_shapes.png`) con múltiples figuras geométricas.
 
-Para generar nuevas imágenes de prueba:
+### Generar Imágenes Individuales
+
+Para generar imágenes con una sola figura cada una (ideal para pruebas):
+```bash
+python crear_imagenes_individuales.py
+```
+
+Esto creará una carpeta `ejemplos/` con 6 imágenes:
+- `ejemplo_triangulo.png` - Triángulo individual
+- `ejemplo_cuadrado.png` - Cuadrado individual
+- `ejemplo_rectangulo.png` - Rectángulo individual
+- `ejemplo_pentagono.png` - Pentágono individual
+- `ejemplo_hexagono.png` - Hexágono individual
+- `ejemplo_circulo.png` - Círculo individual
+
+### Generar Imagen con Múltiples Figuras
+
+Para crear una imagen con varias figuras:
 ```bash
 python crear_imagen_prueba.py
 ```
@@ -88,23 +106,28 @@ python crear_imagen_prueba.py
 - **Tkinter**: Interfaz gráfica de usuario
 - **Pillow (PIL)**: Manejo de imágenes para la GUI
 
-## � Estructura del Proyecto
+## 📂 Estructura del Proyecto
 
 ```
 geometric-shape-detector/
 │
-├── geometric_shape_detector.py    # Aplicación principal
-├── crear_imagen_prueba.py         # Generador de imágenes de prueba
-├── test_shapes.png                # Imagen de ejemplo
-├── requirements.txt               # Dependencias Python
-├── ejecutar.bat                   # Script de ejecución (Windows)
-├── .gitignore                     # Archivos ignorados por Git
+├── geometric_shape_detector.py       # Aplicación principal con GUI
+├── crear_imagen_prueba.py            # Generador de imágenes múltiples
+├── crear_imagenes_individuales.py    # Generador de imágenes individuales
+├── test_shapes.png                   # Imagen de ejemplo con múltiples figuras
+├── requirements.txt                  # Dependencias Python
+├── ejecutar.bat                      # Script de ejecución (Windows)
+├── .gitignore                        # Archivos ignorados por Git
+├── LICENSE                           # Licencia MIT
+├── README.md                         # Este archivo
 │
-├── LEEME_PRIMERO.txt             # Guía de inicio rápido
-├── GUIA_RAPIDA.txt               # Guía visual detallada
-├── INDICE.txt                    # Índice del proyecto
-├── RESUMEN_FINAL.txt             # Resumen completo
-└── README.md                     # Este archivo
+└── ejemplos/                         # Carpeta con imágenes individuales
+    ├── ejemplo_triangulo.png
+    ├── ejemplo_cuadrado.png
+    ├── ejemplo_rectangulo.png
+    ├── ejemplo_pentagono.png
+    ├── ejemplo_hexagono.png
+    └── ejemplo_circulo.png
 ```
 
 ## 💡 Consejos para Mejores Resultados
