@@ -1,12 +1,8 @@
-"""
-Script para generar una imagen de prueba con diferentes figuras geométricas
-"""
 import cv2
 import numpy as np
 
 
 def create_test_image():
-    """Crea una imagen de prueba con varias figuras geométricas"""
     # Crear lienzo blanco
     width, height = 900, 600
     img = np.ones((height, width, 3), dtype=np.uint8) * 255
@@ -95,7 +91,7 @@ def main():
     output_path = "test_shapes.png"
     cv2.imwrite(output_path, test_image)
     
-    print(f"✅ Imagen de prueba creada exitosamente: {output_path}")
+    print(f"Imagen de prueba creada exitosamente: {output_path}")
     print("\nFiguras incluidas:")
     print("  • 2 Triángulos (verde)")
     print("  • 1 Cuadrado (azul)")

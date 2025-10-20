@@ -76,7 +76,7 @@ class ShapeDetectorApp:
 
         self.load_btn = ttk.Button(
             control_frame,
-            text="📂  Cargar imagen",
+            text="Cargar imagen",
             command=self.load_image,
             style="Success.TButton",
             cursor="hand2",
@@ -87,7 +87,7 @@ class ShapeDetectorApp:
 
         self.detect_btn = ttk.Button(
             control_frame,
-            text="🔍  Detectar figuras",
+            text="Detectar figuras",
             command=self.detect_shapes,
             style="Accent.TButton",
             cursor="hand2",
@@ -99,7 +99,7 @@ class ShapeDetectorApp:
 
         self.save_btn = ttk.Button(
             control_frame,
-            text="💾  Guardar resultado",
+            text="Guardar resultado",
             command=self.save_result,
             style="Info.TButton",
             cursor="hand2",
@@ -111,7 +111,7 @@ class ShapeDetectorApp:
 
         self.clear_btn = ttk.Button(
             control_frame,
-            text="🧹  Limpiar",
+            text="Limpiar",
             command=self.clear_all,
             style="Danger.TButton",
             cursor="hand2",
@@ -260,7 +260,7 @@ class ShapeDetectorApp:
 
         helpmenu = tk.Menu(menubar, tearoff=0)
         helpmenu.add_command(label="Acerca de", command=lambda: messagebox.showinfo(
-            "Acerca de", "Detector de Figuras Geométricas\nMejorado con una interfaz más agradable."
+            "Acerca de", "Detector de Figuras Geométricas"
         ))
         menubar.add_cascade(label="Ayuda", menu=helpmenu)
 

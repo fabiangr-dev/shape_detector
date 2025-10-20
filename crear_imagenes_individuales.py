@@ -1,15 +1,9 @@
-"""
-Script para crear imágenes de ejemplo con una sola figura geométrica cada una
-"""
-
 import cv2
 import numpy as np
 import os
 
 def crear_imagen_con_figura(forma, nombre_archivo, tamaño=(600, 600)):
     """
-    Crea una imagen con una sola figura geométrica centrada
-    
     Args:
         forma: tipo de figura ('triangulo', 'cuadrado', 'rectangulo', 'pentagono', 'hexagono', 'circulo')
         nombre_archivo: nombre del archivo de salida
@@ -107,7 +101,7 @@ def main():
     carpeta_salida = "ejemplos"
     if not os.path.exists(carpeta_salida):
         os.makedirs(carpeta_salida)
-        print(f"📁 Carpeta creada: {carpeta_salida}\n")
+        print(f" Carpeta creada: {carpeta_salida}\n")
     
     # Lista de figuras a crear
     figuras = [
@@ -127,12 +121,10 @@ def main():
         crear_imagen_con_figura(forma, ruta_completa)
     
     print("\n" + "=" * 60)
-    print(f"✅ ¡Completado! Se crearon {len(figuras)} imágenes")
-    print(f"📂 Ubicación: {os.path.abspath(carpeta_salida)}")
+    print(f"¡Completado! Se crearon {len(figuras)} imágenes")
+    print(f"Ubicación: {os.path.abspath(carpeta_salida)}")
     print("=" * 60 + "\n")
     
-    print("Puedes usar estas imágenes con el detector de figuras.")
-    print("Cada imagen contiene una sola figura geométrica.\n")
 
 
 if __name__ == "__main__":
